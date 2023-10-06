@@ -1,0 +1,104 @@
+.input-box{
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  font-family: 'Lato' !important;
+}
+.input-text{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: rgb(22,90,172);
+  border: 2px solid white;
+  color: transparent;
+}
+.input-text::placeholder{
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: transparent;
+}
+.btn-input{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;
+}
+
+.btn-input:focus ~ .input-text{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border: none;
+  padding-right: 60px;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  color: #fff;
+}
+
+.btn-input:focus ~ .input-text::placeholder {
+  color:rgba(255,255,255,.5);
+}
+.input-text:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border: none;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  padding-right: 60px;
+  color: #fff;
+  
+  
+}
+
+.input-text:focus::placeholder {
+  color:rgba(255,255,255,.5);
+}
+
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+img.animate {
+  animation-name: tada;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
