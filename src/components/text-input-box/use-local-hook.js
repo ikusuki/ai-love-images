@@ -6,11 +6,11 @@ export const useLocalHook = (sendPrompt) => {
   
   const handleSubmit = useCallback((e) =>{
     e.preventDefault();
-    // if(isLoading) {
-    //   return; 
-    // }
+    if(isLoading) {
+       return; 
+    }
     sendPrompt(promptRef.current.value);
-  }, [/*isLoading,*/ sendPrompt]);
+  }, [isLoading, sendPrompt]);
 
   return {
     handleSubmit,
