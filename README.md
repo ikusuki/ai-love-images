@@ -2,7 +2,7 @@
 
 #### by [Oskar Díaz](https://career.tellernovel.com/313494e3fec843c297d0033263d35942)
 
-This project connects to a Hono app that makes erquests to OpenAI API for generating images from user prompt. In order to work properly, it needs the following server running in `localhost:3001`: https://github.com/ikusuki/ai-love-open-ai
+This project connects to a Hono app that makes requests to OpenAI API for generating images from user prompt. In order to work properly, it needs the following server running in `localhost:3001`: https://github.com/ikusuki/ai-love-open-ai
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
