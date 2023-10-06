@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react";
 
+// Assuming that the API is running on port 3001
+// https://github.com/ikusuki/ai-love-open-ai
 const IMAGE_GENERATOR_API_ENDPOINT =  "http://localhost:3001/api/open-ai/image-generator";
 
 const sendRequest = async (prompt) => {

@@ -4,7 +4,7 @@ import { useLocalHook } from "./use-local-hook";
 
 export const TextInputBox = ({sendPrompt, isLoading }) => {
 
-  const { promptRef, handleSubmit} = useLocalHook(sendPrompt);
+  const { promptRef, handleSubmit} = useLocalHook(sendPrompt, isLoading);
   
   return (
     <form onSubmit={handleSubmit}>
